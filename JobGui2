@@ -1,0 +1,1096 @@
+-- StarterGui.JobScreenGui
+G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
+G2L["1"]["Name"] = [[JobScreenGui]];
+G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
+
+
+-- StarterGui.JobScreenGui.JobGui
+G2L["2"] = Instance.new("Frame", G2L["1"]);
+G2L["2"]["ZIndex"] = 5;
+G2L["2"]["BorderSizePixel"] = 0;
+G2L["2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2"]["Size"] = UDim2.new(0, 450, 0, 450);
+G2L["2"]["Position"] = UDim2.new(0.36956, 0, 0.18262, 0);
+G2L["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2"]["Name"] = [[JobGui]];
+
+
+-- StarterGui.JobScreenGui.JobGui.Title
+G2L["3"] = Instance.new("TextLabel", G2L["2"]);
+G2L["3"]["TextWrapped"] = true;
+G2L["3"]["ZIndex"] = 2;
+G2L["3"]["BorderSizePixel"] = 0;
+G2L["3"]["TextSize"] = 14;
+G2L["3"]["TextScaled"] = true;
+G2L["3"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3"]["FontFace"] = Font.new([[rbxasset://fonts/families/AccanthisADFStd.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["3"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3"]["BackgroundTransparency"] = 1;
+G2L["3"]["RichText"] = true;
+G2L["3"]["Size"] = UDim2.new(0, 309, 0, 39);
+G2L["3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3"]["Text"] = [[JobGui by Real_wes]];
+G2L["3"]["Name"] = [[Title]];
+G2L["3"]["Position"] = UDim2.new(0.15556, 0, -0.10444, 0);
+
+
+-- StarterGui.JobScreenGui.JobGui.Title.UIStroke
+G2L["4"] = Instance.new("UIStroke", G2L["3"]);
+G2L["4"]["Transparency"] = 0.5;
+G2L["4"]["Thickness"] = 1.5;
+
+
+-- StarterGui.JobScreenGui.JobGui.ImageLabel
+G2L["5"] = Instance.new("ImageLabel", G2L["2"]);
+G2L["5"]["BorderSizePixel"] = 0;
+G2L["5"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["5"]["Image"] = [[rbxassetid://137707964386564]];
+G2L["5"]["Size"] = UDim2.new(0, 450, 0, 437);
+G2L["5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+
+
+-- StarterGui.JobScreenGui.JobGui.ImageLabel.UICorner
+G2L["6"] = Instance.new("UICorner", G2L["5"]);
+G2L["6"]["CornerRadius"] = UDim.new(0.1, 0);
+
+
+-- StarterGui.JobScreenGui.JobGui.GiveJob
+G2L["7"] = Instance.new("TextButton", G2L["2"]);
+G2L["7"]["TextWrapped"] = true;
+G2L["7"]["BorderSizePixel"] = 0;
+G2L["7"]["TextSize"] = 14;
+G2L["7"]["TextScaled"] = true;
+G2L["7"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["7"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["7"]["FontFace"] = Font.new([[rbxasset://fonts/families/AccanthisADFStd.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["7"]["BackgroundTransparency"] = 1;
+G2L["7"]["Size"] = UDim2.new(0, 200, 0, 50);
+G2L["7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["7"]["Text"] = [[Give a Job]];
+G2L["7"]["Name"] = [[GiveJob]];
+G2L["7"]["Position"] = UDim2.new(0.06333, 0, 0.59944, 0);
+
+
+-- StarterGui.JobScreenGui.JobGui.GiveJob.LocalScript
+G2L["8"] = Instance.new("LocalScript", G2L["7"]);
+
+
+
+-- StarterGui.JobScreenGui.JobGui.GiveJob.Hover
+G2L["9"] = Instance.new("LocalScript", G2L["7"]);
+G2L["9"]["Name"] = [[Hover]];
+
+
+-- StarterGui.JobScreenGui.JobGui.FireFromJob
+G2L["a"] = Instance.new("TextButton", G2L["2"]);
+G2L["a"]["TextWrapped"] = true;
+G2L["a"]["BorderSizePixel"] = 0;
+G2L["a"]["TextSize"] = 14;
+G2L["a"]["TextScaled"] = true;
+G2L["a"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["a"]["FontFace"] = Font.new([[rbxasset://fonts/families/AccanthisADFStd.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["a"]["BackgroundTransparency"] = 1;
+G2L["a"]["Size"] = UDim2.new(0, 200, 0, 50);
+G2L["a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["a"]["Text"] = [[Fire From Job]];
+G2L["a"]["Name"] = [[FireFromJob]];
+G2L["a"]["Position"] = UDim2.new(0.06556, 0, 0.72944, 0);
+
+
+-- StarterGui.JobScreenGui.JobGui.FireFromJob.LocalScript
+G2L["b"] = Instance.new("LocalScript", G2L["a"]);
+
+
+
+-- StarterGui.JobScreenGui.JobGui.FireFromJob.Hover
+G2L["c"] = Instance.new("LocalScript", G2L["a"]);
+G2L["c"]["Name"] = [[Hover]];
+
+
+-- StarterGui.JobScreenGui.JobGui.GoHome
+G2L["d"] = Instance.new("TextButton", G2L["2"]);
+G2L["d"]["TextWrapped"] = true;
+G2L["d"]["BorderSizePixel"] = 0;
+G2L["d"]["TextSize"] = 14;
+G2L["d"]["TextScaled"] = true;
+G2L["d"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["d"]["FontFace"] = Font.new([[rbxasset://fonts/families/AccanthisADFStd.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["d"]["BackgroundTransparency"] = 1;
+G2L["d"]["Size"] = UDim2.new(0, 200, 0, 50);
+G2L["d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["d"]["Text"] = [[Early Day]];
+G2L["d"]["Name"] = [[GoHome]];
+G2L["d"]["Position"] = UDim2.new(0.06472, 0, 0.85472, 0);
+
+
+-- StarterGui.JobScreenGui.JobGui.GoHome.LocalScript
+G2L["e"] = Instance.new("LocalScript", G2L["d"]);
+
+
+
+-- StarterGui.JobScreenGui.JobGui.GoHome.Hover
+G2L["f"] = Instance.new("LocalScript", G2L["d"]);
+G2L["f"]["Name"] = [[Hover]];
+
+
+-- StarterGui.JobScreenGui.JobGui.UIStroke
+G2L["10"] = Instance.new("UIStroke", G2L["2"]);
+G2L["10"]["ZIndex"] = 2;
+G2L["10"]["Transparency"] = 0.5;
+G2L["10"]["Thickness"] = 10;
+
+
+-- StarterGui.JobScreenGui.JobGui.UISizeConstraint
+G2L["11"] = Instance.new("UISizeConstraint", G2L["2"]);
+G2L["11"]["MinSize"] = Vector2.new(400, 400);
+G2L["11"]["MaxSize"] = Vector2.new(450, 450);
+
+
+-- StarterGui.JobScreenGui.JobGui.UICorner
+G2L["12"] = Instance.new("UICorner", G2L["2"]);
+G2L["12"]["CornerRadius"] = UDim.new(0.1, 0);
+
+
+-- StarterGui.JobScreenGui.JobGui.UIAspectRatioConstraint
+G2L["13"] = Instance.new("UIAspectRatioConstraint", G2L["2"]);
+
+
+
+-- StarterGui.JobScreenGui.JobGui.Check
+G2L["14"] = Instance.new("TextButton", G2L["2"]);
+G2L["14"]["TextWrapped"] = true;
+G2L["14"]["BorderSizePixel"] = 0;
+G2L["14"]["TextSize"] = 14;
+G2L["14"]["TextScaled"] = true;
+G2L["14"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["14"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["14"]["FontFace"] = Font.new([[rbxasset://fonts/families/AccanthisADFStd.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["14"]["BackgroundTransparency"] = 1;
+G2L["14"]["Size"] = UDim2.new(0, 344, 0, 50);
+G2L["14"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["14"]["Text"] = [[Check for tool]];
+G2L["14"]["Name"] = [[Check]];
+G2L["14"]["Position"] = UDim2.new(-0.00083, 0, 0.0625, 0);
+
+
+-- StarterGui.JobScreenGui.JobGui.Check.Hover
+G2L["15"] = Instance.new("LocalScript", G2L["14"]);
+G2L["15"]["Name"] = [[Hover]];
+
+
+-- StarterGui.JobScreenGui.JobGui.Noclip
+G2L["16"] = Instance.new("TextButton", G2L["2"]);
+G2L["16"]["TextWrapped"] = true;
+G2L["16"]["BorderSizePixel"] = 0;
+G2L["16"]["TextSize"] = 14;
+G2L["16"]["TextScaled"] = true;
+G2L["16"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["16"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["16"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["16"]["BackgroundTransparency"] = 0.6;
+G2L["16"]["Size"] = UDim2.new(0, 99, 0, 50);
+G2L["16"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["16"]["Text"] = [[Noclip]];
+G2L["16"]["Name"] = [[Noclip]];
+G2L["16"]["Position"] = UDim2.new(0, 29, 0, 144);
+
+
+-- StarterGui.JobScreenGui.JobGui.Noclip.LocalScript
+G2L["17"] = Instance.new("LocalScript", G2L["16"]);
+
+
+
+-- StarterGui.JobScreenGui.JobGui.Noclip.TextLabel
+G2L["18"] = Instance.new("TextLabel", G2L["16"]);
+G2L["18"]["TextWrapped"] = true;
+G2L["18"]["BorderSizePixel"] = 0;
+G2L["18"]["TextSize"] = 14;
+G2L["18"]["TextScaled"] = true;
+G2L["18"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["18"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["18"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["18"]["BackgroundTransparency"] = 1;
+G2L["18"]["Size"] = UDim2.new(0, 274, 0, 46);
+G2L["18"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["18"]["Text"] = [[Allows you to Noclip and phase through falls]];
+G2L["18"]["Position"] = UDim2.new(1.0875, 0, 0.09091, 0);
+
+
+-- StarterGui.JobScreenGui.JobGui.Noclip.UICorner
+G2L["19"] = Instance.new("UICorner", G2L["16"]);
+G2L["19"]["CornerRadius"] = UDim.new(0, 15);
+
+
+-- StarterGui.JobScreenGui.JobGui.JumpBoost
+G2L["1a"] = Instance.new("TextButton", G2L["2"]);
+G2L["1a"]["TextWrapped"] = true;
+G2L["1a"]["BorderSizePixel"] = 0;
+G2L["1a"]["TextSize"] = 14;
+G2L["1a"]["TextScaled"] = true;
+G2L["1a"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1a"]["BackgroundTransparency"] = 0.6;
+G2L["1a"]["Size"] = UDim2.new(0, 99, 0, 50);
+G2L["1a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1a"]["Text"] = [[Jump]];
+G2L["1a"]["Name"] = [[JumpBoost]];
+G2L["1a"]["Position"] = UDim2.new(0, 29, 0, 78);
+
+
+-- StarterGui.JobScreenGui.JobGui.JumpBoost.LocalScript
+G2L["1b"] = Instance.new("LocalScript", G2L["1a"]);
+
+
+
+-- StarterGui.JobScreenGui.JobGui.JumpBoost.TextLabel
+G2L["1c"] = Instance.new("TextLabel", G2L["1a"]);
+G2L["1c"]["TextWrapped"] = true;
+G2L["1c"]["BorderSizePixel"] = 0;
+G2L["1c"]["TextSize"] = 14;
+G2L["1c"]["TextScaled"] = true;
+G2L["1c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1c"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1c"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1c"]["BackgroundTransparency"] = 1;
+G2L["1c"]["Size"] = UDim2.new(0, 274, 0, 46);
+G2L["1c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1c"]["Text"] = [[Gives you the ablitle to change your jumpPower]];
+G2L["1c"]["Position"] = UDim2.new(1.0875, 0, 0.09091, 0);
+
+
+-- StarterGui.JobScreenGui.JobGui.JumpBoost.UICorner
+G2L["1d"] = Instance.new("UICorner", G2L["1a"]);
+G2L["1d"]["CornerRadius"] = UDim.new(0, 15);
+
+
+-- StarterGui.JobScreenGui.JobGui.Fly
+G2L["1e"] = Instance.new("TextButton", G2L["2"]);
+G2L["1e"]["TextWrapped"] = true;
+G2L["1e"]["BorderSizePixel"] = 0;
+G2L["1e"]["TextSize"] = 14;
+G2L["1e"]["TextScaled"] = true;
+G2L["1e"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1e"]["BackgroundTransparency"] = 0.6;
+G2L["1e"]["Size"] = UDim2.new(0, 99, 0, 50);
+G2L["1e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1e"]["Text"] = [[Fly]];
+G2L["1e"]["Name"] = [[Fly]];
+G2L["1e"]["Position"] = UDim2.new(0, 29, 0, 208);
+
+
+-- StarterGui.JobScreenGui.JobGui.Fly.LocalScript
+G2L["1f"] = Instance.new("LocalScript", G2L["1e"]);
+
+
+
+-- StarterGui.JobScreenGui.JobGui.Fly.TextLabel
+G2L["20"] = Instance.new("TextLabel", G2L["1e"]);
+G2L["20"]["TextWrapped"] = true;
+G2L["20"]["BorderSizePixel"] = 0;
+G2L["20"]["TextSize"] = 14;
+G2L["20"]["TextScaled"] = true;
+G2L["20"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["20"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["20"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["20"]["BackgroundTransparency"] = 1;
+G2L["20"]["Size"] = UDim2.new(0, 239, 0, 29);
+G2L["20"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["20"]["Text"] = [[Gives you the ablitle to fly]];
+G2L["20"]["Position"] = UDim2.new(1.0875, 0, 0.09091, 0);
+
+
+-- StarterGui.JobScreenGui.JobGui.Fly.UICorner
+G2L["21"] = Instance.new("UICorner", G2L["1e"]);
+G2L["21"]["CornerRadius"] = UDim.new(0, 15);
+
+
+-- StarterGui.JobScreenGui.JobGuiButton
+G2L["22"] = Instance.new("TextButton", G2L["1"]);
+G2L["22"]["TextWrapped"] = true;
+G2L["22"]["BorderSizePixel"] = 0;
+G2L["22"]["TextSize"] = 14;
+G2L["22"]["TextScaled"] = true;
+G2L["22"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["22"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["22"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["22"]["Size"] = UDim2.new(0, 99, 0, 70);
+G2L["22"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["22"]["Text"] = [[J0bGui]];
+G2L["22"]["Name"] = [[JobGuiButton]];
+G2L["22"]["Position"] = UDim2.new(0.00847, 0, 0.73895, 0);
+
+
+-- StarterGui.JobScreenGui.JobGuiButton.LocalScript
+G2L["23"] = Instance.new("LocalScript", G2L["22"]);
+
+
+
+-- StarterGui.JobScreenGui.JobGuiButton.UICorner
+G2L["24"] = Instance.new("UICorner", G2L["22"]);
+G2L["24"]["CornerRadius"] = UDim.new(0.15, 0);
+
+
+-- StarterGui.JobScreenGui.JobGuiButton.UIStroke
+G2L["25"] = Instance.new("UIStroke", G2L["22"]);
+G2L["25"]["Thickness"] = 8;
+G2L["25"]["Color"] = Color3.fromRGB(168, 168, 168);
+G2L["25"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.JobScreenGui.JobGuiButton.UIStroke
+G2L["26"] = Instance.new("UIStroke", G2L["22"]);
+
+
+
+-- StarterGui.JobScreenGui.JobGuiButton.Hover
+G2L["27"] = Instance.new("LocalScript", G2L["22"]);
+G2L["27"]["Name"] = [[Hover]];
+
+
+-- StarterGui.JobScreenGui.Job
+G2L["28"] = Instance.new("Tool", G2L["1"]);
+G2L["28"]["Grip"] = CFrame.new(Vector3.new(-0.89478, 0, 0), Vector3.new(0, 0, 1));
+G2L["28"]["WorldPivot"] = CFrame.new(Vector3.new(-118.2, 1.5, -6.35875), Vector3.new(0, 0, -1));
+G2L["28"]["Name"] = [[Job]];
+
+
+-- StarterGui.JobScreenGui.Job.Handle
+G2L["29"] = Instance.new("Part", G2L["28"]);
+G2L["29"]["BottomSurface"] = Enum.SurfaceType.Smooth;
+G2L["29"]["TopSurface"] = Enum.SurfaceType.Smooth;
+G2L["29"]["CFrame"] = CFrame.new(Vector3.new(-118.2, 1.5, -6.35875), Vector3.new(0, 0, -1));
+G2L["29"]["Size"] = Vector3.new(2, 3, 0.08251);
+-- [ERROR] cannot convert BrickColor, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+G2L["29"]["Color"] = Color3.fromRGB(249, 249, 249);
+G2L["29"]["Name"] = [[Handle]];
+
+
+-- StarterGui.JobScreenGui.Job.Handle.Decal
+G2L["2a"] = Instance.new("Decal", G2L["29"]);
+-- [ERROR] cannot convert TextureContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+G2L["2a"]["Texture"] = [[rbxassetid://137707964386564]];
+-- [ERROR] cannot convert ColorMapContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+G2L["2a"]["ColorMap"] = [[rbxassetid://137707964386564]];
+
+
+-- StarterGui.JobScreenGui.LocalScript
+G2L["2b"] = Instance.new("LocalScript", G2L["1"]);
+
+
+
+-- StarterGui.JobScreenGui.JobGui.GiveJob.LocalScript
+local function C_8()
+local script = G2L["8"];
+	local player = game.Players.LocalPlayer
+	local bb = script.Parent
+	local JobGui = script.Parent.Parent
+	local JobTool = game.ReplicatedStorage.Tool.Job
+	
+	bb.MouseButton1Click:Connect(function()
+		JobTool:Clone().Parent = player.Backpack
+		JobGui.Visible = true
+		print(player.name.."Got a job")
+	end)
+	
+end;
+task.spawn(C_8);
+-- StarterGui.JobScreenGui.JobGui.GiveJob.Hover
+local function C_9()
+local script = G2L["9"];
+	local TL = script.Parent 
+	TL.Active = true
+	
+	local TS = game:GetService("TweenService")
+	
+	local tweenInfo = TweenInfo.new(
+	
+		Enum.EasingStyle.Quad,
+		Enum.EasingDirection.Out
+	)
+	
+	local normalSize = TL.Size
+	local hoverSize = UDim2.new(
+		normalSize.X.Scale * 1.05,
+		normalSize.X.Offset,
+		normalSize.Y.Scale * 1.05,
+		normalSize.Y.Offset
+	)
+	
+	TL.MouseEnter:Connect(function()
+		TS:Create(TL, tweenInfo, {
+			Size = hoverSize
+		}):Play()
+	end)
+	
+	TL.MouseLeave:Connect(function()
+		TS:Create(TL, tweenInfo, {
+			Size = normalSize
+		}):Play()
+	end)
+	
+end;
+task.spawn(C_9);
+-- StarterGui.JobScreenGui.JobGui.FireFromJob.LocalScript
+local function C_b()
+local script = G2L["b"];
+	local Players = game:GetService("Players")
+	local ReplicatedStorage = game:GetService("ReplicatedStorage")
+	
+	local player = Players.LocalPlayer
+	local button = script.Parent  -- This should be the "FireFromJob" TextButton
+	
+	-- Change this if your tool has a different name inside ReplicatedStorage.Tools
+	local JOB_TOOL_NAME = "Job"  
+	
+	button.MouseButton1Click:Connect(function()
+		-- Get character's humanoid to unequip tools
+		local character = player.Character or player.CharacterAdded:Wait()
+		local humanoid = character:FindFirstChildOfClass("Humanoid")
+		if humanoid then
+			humanoid:UnequipTools()  -- Moves any equipped tool back to Backpack
+		end
+	
+		-- Remove the tool from Backpack
+		local backpack = player:WaitForChild("Backpack")
+		local toolInBackpack = backpack:FindFirstChild(JOB_TOOL_NAME)
+		if toolInBackpack then
+			toolInBackpack:Destroy()
+			print(player.Name .. " has been fired")
+		end
+	
+		-- Safety check: Remove from Character if somehow still there
+		local toolInCharacter = character:FindFirstChild(JOB_TOOL_NAME)
+		if toolInCharacter then
+			toolInCharacter:Destroy()
+			print(player.Name .. " has been fired")
+		end
+	
+	end)
+end;
+task.spawn(C_b);
+-- StarterGui.JobScreenGui.JobGui.FireFromJob.Hover
+local function C_c()
+local script = G2L["c"];
+	local TL = script.Parent 
+	TL.Active = true
+	
+	local TS = game:GetService("TweenService")
+	
+	local tweenInfo = TweenInfo.new(
+	
+		Enum.EasingStyle.Quad,
+		Enum.EasingDirection.Out
+	)
+	
+	local normalSize = TL.Size
+	local hoverSize = UDim2.new(
+		normalSize.X.Scale * 1.05,
+		normalSize.X.Offset,
+		normalSize.Y.Scale * 1.05,
+		normalSize.Y.Offset
+	)
+	
+	TL.MouseEnter:Connect(function()
+		TS:Create(TL, tweenInfo, {
+			Size = hoverSize
+		}):Play()
+	end)
+	
+	TL.MouseLeave:Connect(function()
+		TS:Create(TL, tweenInfo, {
+			Size = normalSize
+		}):Play()
+	end)
+	
+end;
+task.spawn(C_c);
+-- StarterGui.JobScreenGui.JobGui.GoHome.LocalScript
+local function C_e()
+local script = G2L["e"];
+	local player = game.Players.LocalPlayer
+	local bb = script.Parent
+	
+	bb.MouseButton1Click:Connect(function()
+		player:Kick("Go Home its a early day")
+		print(player.name.."Left the game")
+	end)
+	
+end;
+task.spawn(C_e);
+-- StarterGui.JobScreenGui.JobGui.GoHome.Hover
+local function C_f()
+local script = G2L["f"];
+	local TL = script.Parent 
+	TL.Active = true
+	
+	local TS = game:GetService("TweenService")
+	
+	local tweenInfo = TweenInfo.new(
+	
+		Enum.EasingStyle.Quad,
+		Enum.EasingDirection.Out
+	)
+	
+	local normalSize = TL.Size
+	local hoverSize = UDim2.new(
+		normalSize.X.Scale * 1.05,
+		normalSize.X.Offset,
+		normalSize.Y.Scale * 1.05,
+		normalSize.Y.Offset
+	)
+	
+	TL.MouseEnter:Connect(function()
+		TS:Create(TL, tweenInfo, {
+			Size = hoverSize
+		}):Play()
+	end)
+	
+	TL.MouseLeave:Connect(function()
+		TS:Create(TL, tweenInfo, {
+			Size = normalSize
+		}):Play()
+	end)
+	
+end;
+task.spawn(C_f);
+-- StarterGui.JobScreenGui.JobGui.Check.Hover
+local function C_15()
+local script = G2L["15"];
+	local TL = script.Parent 
+	TL.Active = true
+	
+	local TS = game:GetService("TweenService")
+	
+	local tweenInfo = TweenInfo.new(
+	
+		Enum.EasingStyle.Quad,
+		Enum.EasingDirection.Out
+	)
+	
+	local normalSize = TL.Size
+	local hoverSize = UDim2.new(
+		normalSize.X.Scale * 1.05,
+		normalSize.X.Offset,
+		normalSize.Y.Scale * 1.05,
+		normalSize.Y.Offset
+	)
+	
+	TL.MouseEnter:Connect(function()
+		TS:Create(TL, tweenInfo, {
+			Size = hoverSize
+		}):Play()
+	end)
+	
+	TL.MouseLeave:Connect(function()
+		TS:Create(TL, tweenInfo, {
+			Size = normalSize
+		}):Play()
+	end)
+	
+end;
+task.spawn(C_15);
+-- StarterGui.JobScreenGui.JobGui.Noclip.LocalScript
+local function C_17()
+local script = G2L["17"];
+	-- Noclip GUI toggle LocalScript
+	-- Place this as:
+	-- 1) a LocalScript directly under your TextButton, OR
+	-- 2) a LocalScript in StarterPlayerScripts (see findButton() comment)
+	
+	local RunService = game:GetService("RunService")
+	local Players = game:GetService("Players")
+	
+	local player = Players.LocalPlayer
+	local playerGui = player:WaitForChild("PlayerGui")
+	
+	-- CONFIG: If your button is in a ScreenGui, set these names accordingly.
+	-- If this script is parented to the TextButton, you don't need to change anything.
+	local SCREEN_GUI_NAME = "NoclipGui"   -- name of ScreenGui (if using StarterPlayerScripts)
+	local BUTTON_NAME = "NoclipButton"    -- name of TextButton
+	
+	-- If you placed this script directly under the button, this will return script.Parent
+	local function findButton()
+		if script.Parent:IsA("TextButton") or script.Parent:IsA("ImageButton") then
+			return script.Parent
+		end
+	
+		-- Otherwise try to find button under a named ScreenGui in PlayerGui
+		local screen = playerGui:FindFirstChild(SCREEN_GUI_NAME)
+		if screen then
+			return screen:FindFirstChild(BUTTON_NAME, true) -- search descendants
+		end
+	
+		-- fallback: look for any button named BUTTON_NAME anywhere in PlayerGui
+		return playerGui:FindFirstChild(BUTTON_NAME, true)
+	end
+	
+	local button = findButton()
+	if not button then
+		warn("Noclip script: Button not found. Put this LocalScript under your TextButton or set SCREEN_GUI_NAME/BUTTON_NAME correctly.")
+		return
+	end
+	
+	local noclip = false
+	local character = player.Character or player.CharacterAdded:Wait()
+	
+	local function setCharacterCollision(chr, enabled)
+		if not chr then return end
+		for _, obj in pairs(chr:GetDescendants()) do
+			if obj:IsA("BasePart") then
+				obj.CanCollide = enabled
+			end
+		end
+	end
+	
+	-- update GUI visuals
+	local function updateButtonVisuals()
+		if not button then return end
+		if noclip then
+			button.Text = "Noclip: ON"
+			pcall(function() button.BackgroundColor3 = Color3.fromRGB(60, 170, 60) end)
+		else
+			button.Text = "Noclip: OFF"
+			pcall(function() button.BackgroundColor3 = Color3.fromRGB(170, 60, 60) end)
+		end
+	end
+	
+	-- toggle function
+	local function toggleNoclip()
+		noclip = not noclip
+		if noclip then
+			setCharacterCollision(character, false)
+		else
+			setCharacterCollision(character, true)
+		end
+		updateButtonVisuals()
+	end
+	
+	-- keep collisions off while noclip is active (handles new parts)
+	RunService.Stepped:Connect(function()
+		if noclip and character then
+			for _, obj in pairs(character:GetDescendants()) do
+				if obj:IsA("BasePart") then
+					if obj.CanCollide then
+						obj.CanCollide = false
+					end
+				end
+			end
+		end
+	end)
+	
+	-- handle click
+	button.MouseButton1Click:Connect(function()
+		toggleNoclip()
+	end)
+	
+	-- handle respawn
+	local function onCharacterAdded(chr)
+		character = chr
+		if noclip then
+			-- reapply noclip to the new character
+			setCharacterCollision(character, false)
+		else
+			-- ensure normal collisions
+			setCharacterCollision(character, true)
+		end
+	end
+	
+	player.CharacterAdded:Connect(onCharacterAdded)
+	
+	-- initial visuals & state
+	if player.Character then
+		onCharacterAdded(player.Character)
+	end
+	updateButtonVisuals()
+	
+end;
+task.spawn(C_17);
+-- StarterGui.JobScreenGui.JobGui.JumpBoost.LocalScript
+local function C_1b()
+local script = G2L["1b"];
+	-- Place this LocalScript under a TextButton in your GUI
+	
+	local button = script.Parent
+	local Players = game:GetService("Players")
+	local player = Players.LocalPlayer
+	
+	local jumpBoostEnabled = false
+	local NORMAL_JUMP = 50
+	local BOOSTED_JUMP = 120
+	
+	-- Function to update visuals
+	local function updateButtonVisuals()
+		if jumpBoostEnabled then
+			button.Text = "Jump Boost: ON"
+			button.BackgroundColor3 = Color3.fromRGB(60, 170, 60)
+		else
+			button.Text = "Jump Boost: OFF"
+			button.BackgroundColor3 = Color3.fromRGB(170, 60, 60)
+		end
+	end
+	
+	-- Function to toggle jump power
+	local function toggleJumpBoost()
+		local character = player.Character or player.CharacterAdded:Wait()
+		local humanoid = character:FindFirstChildOfClass("Humanoid")
+		if not humanoid then return end
+	
+		if jumpBoostEnabled then
+			humanoid.JumpPower = NORMAL_JUMP
+		else
+			humanoid.JumpPower = BOOSTED_JUMP
+		end
+	
+		jumpBoostEnabled = not jumpBoostEnabled
+		updateButtonVisuals()
+	end
+	
+	-- Connect button click
+	button.MouseButton1Click:Connect(toggleJumpBoost)
+	
+	-- Handle respawn to reapply jump power
+	player.CharacterAdded:Connect(function(character)
+		local humanoid = character:WaitForChild("Humanoid")
+		if jumpBoostEnabled then
+			humanoid.JumpPower = BOOSTED_JUMP
+		else
+			humanoid.JumpPower = NORMAL_JUMP
+		end
+	end)
+	
+	-- Initialize
+	updateButtonVisuals()
+	
+end;
+task.spawn(C_1b);
+-- StarterGui.JobScreenGui.JobGui.Fly.LocalScript
+local function C_1f()
+local script = G2L["1f"];
+	-- Fly GUI toggle LocalScript
+	-- Place this as:
+	-- 1) a LocalScript directly under your TextButton, OR
+	-- 2) a LocalScript in StarterPlayerScripts (adjust findButton names below)
+	
+	local RunService = game:GetService("RunService")
+	local Players = game:GetService("Players")
+	local UserInputService = game:GetService("UserInputService")
+	
+	local player = Players.LocalPlayer
+	local playerGui = player:WaitForChild("PlayerGui")
+	
+	-- CONFIG: change these if needed
+	local SCREEN_GUI_NAME = "FlyGui"    -- name of ScreenGui (if using StarterPlayerScripts)
+	local BUTTON_NAME = "FlyButton"     -- name of TextButton
+	local FLY_SPEED = 100               -- horizontal speed
+	local ASCEND_SPEED = 80             -- vertical speed when holding Space
+	local DESCEND_SPEED = 80            -- vertical speed when holding LeftShift
+	local MAX_VELOCITY = 200            -- safety clamp
+	
+	-- find button similar to previous script logic
+	local function findButton()
+		if script.Parent:IsA("TextButton") or script.Parent:IsA("ImageButton") then
+			return script.Parent
+		end
+		local screen = playerGui:FindFirstChild(SCREEN_GUI_NAME)
+		if screen then
+			-- search descendants for the button name
+			return screen:FindFirstChild(BUTTON_NAME, true)
+		end
+		return playerGui:FindFirstChild(BUTTON_NAME, true)
+	end
+	
+	local button = findButton()
+	if not button then
+		warn("Fly script: Button not found. Put this LocalScript under your TextButton or set SCREEN_GUI_NAME/BUTTON_NAME correctly.")
+		return
+	end
+	
+	-- state
+	local flying = false
+	local character = player.Character or player.CharacterAdded:Wait()
+	local humanoid = character:FindFirstChildOfClass("Humanoid")
+	local hrp = character:FindFirstChild("HumanoidRootPart")
+	
+	-- utility: (re)obtain instances after respawn
+	local function refreshReferences(chr)
+		character = chr
+		humanoid = character:FindFirstChildOfClass("Humanoid")
+		hrp = character:FindFirstChild("HumanoidRootPart")
+	end
+	
+	-- Body objects (created when we start flying)
+	local bodyVelocity = nil
+	local bodyGyro = nil
+	
+	local function createBodies()
+		if not hrp then return end
+		-- remove old if present
+		if bodyVelocity and bodyVelocity.Parent then bodyVelocity:Destroy() end
+		if bodyGyro and bodyGyro.Parent then bodyGyro:Destroy() end
+	
+		bodyVelocity = Instance.new("BodyVelocity")
+		bodyVelocity.MaxForce = Vector3.new(1e5, 1e5, 1e5)
+		bodyVelocity.Velocity = Vector3.new(0,0,0)
+		bodyVelocity.P = 1250
+		bodyVelocity.Parent = hrp
+	
+		bodyGyro = Instance.new("BodyGyro")
+		bodyGyro.MaxTorque = Vector3.new(1e5, 1e5, 1e5)
+		bodyGyro.D = 100
+		bodyGyro.P = 3000
+		bodyGyro.CFrame = hrp.CFrame
+		bodyGyro.Parent = hrp
+	end
+	
+	local function destroyBodies()
+		if bodyVelocity then
+			pcall(function() bodyVelocity:Destroy() end)
+			bodyVelocity = nil
+		end
+		if bodyGyro then
+			pcall(function() bodyGyro:Destroy() end)
+			bodyGyro = nil
+		end
+	end
+	
+	local function updateButtonVisuals()
+		if not button then return end
+		if flying then
+			button.Text = "Fly: ON"
+			pcall(function() button.BackgroundColor3 = Color3.fromRGB(60,170,60) end)
+		else
+			button.Text = "Fly: OFF"
+			pcall(function() button.BackgroundColor3 = Color3.fromRGB(170,60,60) end)
+		end
+	end
+	
+	-- toggle fly
+	local function startFlying()
+		if flying then return end
+		if not character or not hrp or not humanoid then return end
+		flying = true
+		-- disable default physics/jumping clientside (prevents weird jumps)
+		if humanoid then
+			humanoid.PlatformStand = true
+		end
+		createBodies()
+		updateButtonVisuals()
+	end
+	
+	local function stopFlying()
+		if not flying then return end
+		flying = false
+		if humanoid then
+			-- restore normal controls
+			humanoid.PlatformStand = false
+		end
+		destroyBodies()
+		updateButtonVisuals()
+	end
+	
+	local function toggleFly()
+		if flying then
+			stopFlying()
+		else
+			startFlying()
+		end
+	end
+	
+	-- input helpers for movement
+	local function getMovementInput()
+		local forward = 0
+		local right = 0
+		if UserInputService:IsKeyDown(Enum.KeyCode.W) then forward = forward + 1 end
+		if UserInputService:IsKeyDown(Enum.KeyCode.S) then forward = forward - 1 end
+		if UserInputService:IsKeyDown(Enum.KeyCode.A) then right = right - 1 end
+		if UserInputService:IsKeyDown(Enum.KeyCode.D) then right = right + 1 end
+		return Vector3.new(right, 0, forward)
+	end
+	
+	-- main loop: apply velocity according to camera direction + input
+	RunService.RenderStepped:Connect(function(dt)
+		if not flying then return end
+		if not hrp or not bodyVelocity or not bodyGyro then return end
+	
+		local cam = workspace.CurrentCamera
+		local camCFrame = cam and cam.CFrame or hrp.CFrame
+		-- orientations
+		local forwardVec = Vector3.new(camCFrame.LookVector.X, 0, camCFrame.LookVector.Z).Unit
+		if forwardVec ~= forwardVec then forwardVec = Vector3.new(0,0,-1) end -- handle NaN
+		local rightVec = Vector3.new(camCFrame.RightVector.X, 0, camCFrame.RightVector.Z).Unit
+		if rightVec ~= rightVec then rightVec = Vector3.new(1,0,0) end
+	
+		-- movement input
+		local inputVec = getMovementInput() -- (x = right, z = forward)
+		local moveDir = (rightVec * inputVec.X + forwardVec * inputVec.Z)
+		if moveDir.Magnitude > 1 then moveDir = moveDir.Unit end
+		local horizontalVel = moveDir * FLY_SPEED
+	
+		-- vertical input
+		local verticalVel = 0
+		if UserInputService:IsKeyDown(Enum.KeyCode.Space) then
+			verticalVel = ASCEND_SPEED
+		elseif UserInputService:IsKeyDown(Enum.KeyCode.LeftShift) then
+			verticalVel = -DESCEND_SPEED
+		else
+			verticalVel = 0
+		end
+	
+		-- combine and clamp
+		local finalVel = Vector3.new(horizontalVel.X, verticalVel, horizontalVel.Z)
+		if finalVel.Magnitude > MAX_VELOCITY then
+			finalVel = finalVel.Unit * MAX_VELOCITY
+		end
+	
+		-- apply
+		bodyVelocity.Velocity = finalVel
+	
+		-- orient the character to look in camera direction (smooth)
+		local targetCFrame = CFrame.new(hrp.Position, hrp.Position + Vector3.new(camCFrame.LookVector.X, 0, camCFrame.LookVector.Z))
+		bodyGyro.CFrame = targetCFrame
+	end)
+	
+	
+	button.MouseButton1Click:Connect(function()
+		toggleFly()
+	end)
+	
+	-- handle respawn: reattach bodies if flying
+	local function onCharacterAdded(chr)
+		refreshReferences(chr)
+		if flying then
+			-- small delay to allow parts to exist
+			task.defer(function()
+				hrp = character:WaitForChild("HumanoidRootPart", 5)
+				humanoid = character:FindFirstChildOfClass("Humanoid")
+				createBodies()
+				if humanoid then humanoid.PlatformStand = true end
+			end)
+		else
+			-- ensure not leaving anything behind
+			destroyBodies()
+		end
+	end
+	
+	player.CharacterAdded:Connect(onCharacterAdded)
+	if player.Character then
+		onCharacterAdded(player.Character)
+	end
+	
+	-- cleanup on script disable/unload
+	script.AncestryChanged:Connect(function()
+		if not script:IsDescendantOf(game) then
+			stopFlying()
+		end
+	end)
+	
+	-- initial visuals
+	updateButtonVisuals()
+	
+end;
+task.spawn(C_1f);
+-- StarterGui.JobScreenGui.JobGuiButton.LocalScript
+local function C_23()
+local script = G2L["23"];
+	local player = game.Players.LocalPlayer
+	local button = script.Parent
+	local JobGui = script.Parent.Parent.JobGui
+	
+	local TS = game:GetService("TweenService")
+	local tweenInfo = TweenInfo.new(0.25, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	
+	button.MouseButton1Click:Connect(function()
+		if JobGui.Visible then
+			local t = TS:Create(JobGui, tweenInfo, {Size = UDim2.fromScale(0, 0)})
+			t:Play()
+			t.Completed:Wait()
+			JobGui.Visible = false
+		else
+			JobGui.Size = UDim2.fromScale(0, 0)
+			JobGui.Visible = true
+			TS:Create(JobGui, tweenInfo, {Size = UDim2.fromScale(1, 1)}):Play()
+		end
+	end)
+	
+end;
+task.spawn(C_23);
+-- StarterGui.JobScreenGui.JobGuiButton.Hover
+local function C_27()
+local script = G2L["27"];
+	local TL = script.Parent 
+	TL.Active = true
+	
+	local TS = game:GetService("TweenService")
+	
+	local tweenInfo = TweenInfo.new(
+	
+		Enum.EasingStyle.Quad,
+		Enum.EasingDirection.Out
+	)
+	
+	local normalSize = TL.Size
+	local hoverSize = UDim2.new(
+		normalSize.X.Scale * 1.05,
+		normalSize.X.Offset,
+		normalSize.Y.Scale * 1.05,
+		normalSize.Y.Offset
+	)
+	
+	TL.MouseEnter:Connect(function()
+		TS:Create(TL, tweenInfo, {
+			Size = hoverSize
+		}):Play()
+	end)
+	
+	TL.MouseLeave:Connect(function()
+		TS:Create(TL, tweenInfo, {
+			Size = normalSize
+		}):Play()
+	end)
+	
+end;
+task.spawn(C_27);
+-- StarterGui.JobScreenGui.LocalScript
+local function C_2b()
+local script = G2L["2b"];
+	local button = script.Parent
+	local player = game.Players.LocalPlayer
+	
+	local PlayerGui = player:WaitForChild("PlayerGui")
+	local JobGui = PlayerGui:WaitForChild("JobGui")
+	
+	local REQUIREMENTS = {
+		Tool = true,
+		Gui = true,
+		Executor = true,
+		Recommended = false
+	}
+	
+	local RequirementsList = {
+		"Tool",
+		"Gui",
+		"Executor",
+		"Github or ScriptBlox",
+		"Unc 80% or more / Good Executor"
+	}
+	
+	print(RequirementsList[1])
+	print(RequirementsList[2])
+	print(RequirementsList[3])
+	print(RequirementsList[4])
+	print(RequirementsList[5])
+	
+	print(REQUIREMENTS.Tool)
+	print(REQUIREMENTS.Gui)
+	print(REQUIREMENTS.Executor)
+	print(REQUIREMENTS.Recommended)
+	
+end;
+task.spawn(C_2b);
+
+return G2L["1"], require;
